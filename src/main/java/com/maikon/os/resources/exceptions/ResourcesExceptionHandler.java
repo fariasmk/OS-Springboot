@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.maikon.os.services.exceptions.DataIntegratyViolationException;
-import com.maikon.os.services.exceptions.ObjectNotFondException;
+import com.maikon.os.services.exceptions.ObjectNotFoundException;
 
 @ControllerAdvice
 public class ResourcesExceptionHandler {
 
-	@ExceptionHandler(ObjectNotFondException.class)
-	public ResponseEntity<StandardError> objectNotFoundException(ObjectNotFondException e) {
+	@ExceptionHandler(ObjectNotFoundException.class)
+	public ResponseEntity<StandardError> objectNotFoundException(ObjectNotFoundException e) {
 		StandardError error = new StandardError(System.currentTimeMillis(), HttpStatus.NOT_FOUND.value(),
 				e.getMessage());
 
