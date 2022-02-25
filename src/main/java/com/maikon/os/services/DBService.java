@@ -38,12 +38,12 @@ public class DBService {
 		Cliente c5 = new Cliente(null, "Odair Silva", "424.293.100-07", "(88) 98888-3333");
 		Cliente c6 = new Cliente(null, "Matheus Rodrigues", "077.893.160-95", "(88) 98888-4444");
 
-		OS os1 = new OS(null, Prioridade.ALTA, "Teste create OD", Status.ANDAMENTO, t1, c1);
-		OS os2 = new OS(null, Prioridade.MEDIA, "Teste create OD", Status.ANDAMENTO, t5, c4);
-		OS os3 = new OS(null, Prioridade.ALTA, "Teste create OD", Status.ANDAMENTO, t2, c6);
-		OS os4 = new OS(null, Prioridade.BAIXA, "Teste create OD", Status.ANDAMENTO, t3, c2);
-		OS os5 = new OS(null, Prioridade.MEDIA, "Teste create OD", Status.ANDAMENTO, t4, c1);
-		OS os6 = new OS(null, Prioridade.BAIXA, "Teste create OD", Status.ANDAMENTO, t6, c3);
+		OS os1 = new OS(null, Prioridade.ALTA, "Teste create OD1", Status.ABERTO, t1, c1);
+		OS os2 = new OS(null, Prioridade.MEDIA, "Teste create OD2", Status.ANDAMENTO, t5, c4);
+		OS os3 = new OS(null, Prioridade.ALTA, "Teste create OD3", Status.ENCERRADO, t2, c6);
+		OS os4 = new OS(null, Prioridade.BAIXA, "Teste create OD4", Status.ANDAMENTO, t3, c2);
+		OS os5 = new OS(null, Prioridade.MEDIA, "Teste create OD5", Status.ABERTO, t4, c1);
+		OS os6 = new OS(null, Prioridade.BAIXA, "Teste create OD6", Status.ENCERRADO, t6, c3);
 
 		t1.getList().add(os1);
 		c1.getList().add(os1);
